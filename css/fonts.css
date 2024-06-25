@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Almarai";
+  src: url("../webfonts/Almarai/Almarai-ExtraBold.woff2") format("woff2"),
+    url("../webfonts/Almarai/Almarai-ExtraBold.woff") format("woff"),
+    url("../webfonts/Almarai/Almarai-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../webfonts/Almarai/Almarai-Regular.woff2") format("woff2"),
+    url("../webfonts/Almarai/Almarai-Regular.woff") format("woff"),
+    url("../webfonts/Almarai/Almarai-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../webfonts/Almarai/Almarai-Light.woff2") format("woff2"),
+    url("../webfonts/Almarai/Almarai-Light.woff") format("woff"),
+    url("../webfonts/Almarai/Almarai-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../webfonts/Almarai/Almarai-Bold.woff2") format("woff2"),
+    url("../webfonts/Almarai/Almarai-Bold.woff") format("woff"),
+    url("../webfonts/Almarai/Almarai-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
