@@ -49,46 +49,87 @@
     </div>
     <!-- preloader -->
     <!-- header section -->
-    <div class="upper-header">
-      <div class="container"></div>
-    </div>
+
     <header>
       <div class="top-header">
-        <div class="nav-header">
-          <div class="header-cont">
-            <div class="logo-cont">
-              <figure class="img-logo">
-                <a href="index.html"
-                  ><img src="images/logo.png" class="img-fluid"
-                /></a>
-              </figure>
-              <figure class="second-logo">
-                <a href="index.html"
-                  ><img src="images/second-logo.png" class="img-fluid"
-                /></a>
-              </figure>
+        <div class="upper-header">
+          <div class="container">
+            <div class="upper-cont">
+              <div class="upper-icon-cont">
+                <div class="dropdown">
+                  <div class="add-to">
+                    <div class="dropdown-ancor">
+                      <i class="iconsax" icon-name="language-circle"></i>
+                      <span>العربية</span>
+                      <i class="iconsax" icon-name="chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                      <a class="cat-drop" href="#">دخول</a>
+                      <a class="cat-drop" href="#">تسجيل جديد </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="dropdown-ancor">
+                  <i class="iconsax" icon-name="user-2-circle"></i>
+                  <span>تسجيل الدخول</span>
+                  <i class="iconsax icon-dir" icon-name="chevron-left"></i>
+                </a>
+              </div>
+              <a href="contact.html" class="contact-link"> تواصل معى</a>
             </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="nav-header">
+            <figure class="img-logo">
+              <a href="index.html"
+                ><img src="images/logo.png" class="img-fluid"
+              /></a>
+            </figure>
             <div class="navgition">
               <div class="nav-head">
-                <a href="index-en.html" class="lang-ancor"> en </a>
+                <button class="close-menu">
+                  <i class="iconsax" icon-name="x"></i>
+                </button>
               </div>
               <ul class="big-menu list-unstyled">
                 <li>
-                  <a href="index.html"> الرئيسية </a>
+                  <a href="index.html" class="active"> الرئيسية </a>
+                </li>
+                <li>
+                  <a href="#"> ادارة الأعمال </a>
+                </li>
+                <li>
+                  <a href="#"> المقالات </a>
+                </li>
+                <li>
+                  <a href="#"> الصور</a>
+                </li>
+                <li>
+                  <a href="#"> الفيديوهات</a>
                 </li>
               </ul>
             </div>
+            <div class="search-section">
+              <form class="search-form">
+                <input
+                  class="search-input"
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="البحث عن المقالات"
+                />
+                <button class="search-button">
+                  <i class="iconsax" icon-name="search-normal-2"></i>
+                </button>
+              </form>
+            </div>
             <div class="show-icons">
-              <a href="index-en.html" class="lang-ancor"> en </a>
-              <a href="contact.html" class="contact-link" rel="nofollow">
-                تواصل معنا</a
-              >
-              <button class="menu-bars fixall" id="menu-id">
-                <span class="hamburger-lines">
-                  <span class="line line1"></span>
-                  <span class="line line2"></span>
-                  <span class="line line3"></span>
-                </span>
+              <button class="open-search-btn">
+                <i class="iconsax" icon-name="search-normal-2"></i>
+              </button>
+              <button class="menu-bars" id="menu-id">
+                <i class="iconsax" icon-name="hamburger-menu"></i>
               </button>
             </div>
           </div>
@@ -98,430 +139,983 @@
     <!-- header section     -->
     <!-- main -->
     <main class="main">
-      <div class="main-clip">
+      <div class="container">
         <div class="main-cont">
-          <div class="main-video-cont">
+          <!-- <div class="main-video-cont">
             <video width="100%" height="100%" muted autoplay>
               <source src="images/tasawk.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div> -->
           <div class="main-caption">
-            <figure class="loading-img main-img">
+            <h3 class="main-welcome">
               <img
-                data-src="images/main/main-img.png"
-                class="lazy-img img-fluid"
+                src="images/main/before.png"
+                class="text-before"
+                alt="icon"
               />
+              <span>مرحباً بك</span>
+              <img src="images/main/after.png" class="text-after" alt="icon" />
+            </h3>
+            <h2 class="main-text">فى منصة محمد الجربوع</h2>
+            <h1 class="main-p">إبدأ رحلتك فى تطوير أعمالك بكل ثقة ونجاح</h1>
+            <a href="#" class="main-btn">انضم إلينا الأن!</a>
+          </div>
+          <div class="main-img-cont">
+            <figure class="main-img loading-img">
+              <img class="lazy-img" data-src="images/main/01.png" alt="main" />
             </figure>
           </div>
         </div>
-        <a href="#about" class="header-scroll-down-butt"></a>
+        <a href="#about" class="header-scroll-down-butt">
+          <span>استكشف المزيد</span>
+          <span class="icon">
+            <img src="images/main/icon.png" alt="icon" />
+            <img src="images/main/icon.png" alt="icon" />
+            <img src="images/main/icon.png" alt="icon" />
+          </span>
+        </a>
       </div>
     </main>
     <!-- main -->
     <!-- about-section  -->
     <section class="about-section" id="about">
-      <div class="container custom-container">
+      <div class="container">
         <div class="about-cont">
-          <div class="about-content">
-            <h3 class="about-title">اعرف اكتر عن ملاعب</h3>
+          <div class="about-img-cont">
+            <div class="section-head">
+              <div class="head-cont">
+                <figure>
+                  <img src="images/star.png" alt="icon" />
+                </figure>
+                <span class="head-num">01</span>
+              </div>
+              <span class="head-text">من أنا؟</span>
+            </div>
             <p class="about-pargh">
-              الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات المميزة،
-              مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل كافة الأعمال
-              التشغيلية والإدارية لهم
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+              العربى زيادة عدد الفقرات كما تريد.
             </p>
-            <a href="#" class="about-link">اعرف اكثر</a>
-          </div>
-          <div class="about-img">
-            <figure>
-              <img src="images/about-img.png" alt="about-img" />
+            <figure class="loading-img about-img">
+              <img
+                class="lazy-img"
+                data-src="images/about-img.png"
+                alt="about-img"
+              />
             </figure>
+          </div>
+          <div class="about-content">
+            <h3 class="about-title">
+              <img src="images/quote.png" alt="icon" />
+              <span class="text-start">الريادة هي لغة الأمل،</span>
+              <span class="text-end">والتحدي هو وقود النجاح.</span>
+            </h3>
+            <h5 class="about-head">بداية الرحلة</h5>
+            <p class="about-text">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+              العربى زيادة عدد الفقرات كما تريد.
+            </p>
+            <h5 class="about-head">الوصول وتحقيق الأهداف</h5>
+            <ul class="about-list">
+              <li>
+                <figure>
+                  <img src="images/star.png" alt="icon" />
+                </figure>
+                <p class="about-text">
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق.
+                </p>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/star.png" alt="icon" />
+                </figure>
+                <p class="about-text">
+                  إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                  زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                  لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص،
+                  حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية
+                  لتصميم الموقع.
+                </p>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/star.png" alt="icon" />
+                </figure>
+                <p class="about-text">
+                  ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر
+                  للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم
+                  عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                  التصميم فيظهر بشكل لا يليق.
+                </p>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/star.png" alt="icon" />
+                </figure>
+                <p class="about-text">
+                  هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو
+                  وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه
+                  مازال نصاً بديلاً ومؤقتاً.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <!-- about-section  -->
-    <!-- mallab-section  -->
-    <section class="mallab-section">
-      <div class="container custom-container">
-        <div class="mallab-cont">
-          <div class="mallab-img">
+    <!-- present-section   -->
+    <section class="present-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-cont">
             <figure>
-              <img class="mallab-bg" src="images/mallab/bg.png" alt="bg" />
-              <img class="mallab-hero" src="images/mallab/hero.png" alt="bg" />
+              <img src="images/star.png" alt="icon" />
             </figure>
+            <span class="head-num">02</span>
           </div>
-          <div class="mallab-content">
-            <h3 class="about-title">ابحث عن ملاعب بالقرب منك واحجز</h3>
-            <div class="mallab-pargh">
-              الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات المميزة،
-              مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل كافة الأعمال
-              التشغيلية والإدارية لهم الملاعب يقدم لملاك الملاعب والأكاديميات
-              العديد من الخدمات المميزة، مثل تسويقهم لمئات الآلاف من اللاعبين،
-              وتسهيل كافة
-            </div>
-          </div>
+          <span class="head-text">من أنا؟</span>
         </div>
-        <div class="stadium-cont">
-          <a
-            href="#"
-            class="stadium-card"
-            data-sal="slide-down"
-            style="--sal-delay: 0.3s"
-          >
-            <figure>
-              <img src="images/mallab/stadium.png" alt="stadium" />
-            </figure>
-            <div class="stadium-content">
-              <h5 class="stadium-title">تحدي فريق الاسطورة</h5>
-              <span class="stadium-name">
-                <i class="iconsax" icon-name="flag-1"></i>
-                <span>استاد النيل</span>
-              </span>
+        <div class="present-cont">
+          <p class="about-pargh">
+            تساعد منصتنا رواد الأعمال من خلال خبرتنا الطويلة فى العديد من
+            المجالات فى مساعدة رواد الأعمال فى تطوير فكرة مشروعهم وثقلها
+            وتحويلها من مجرد أفكار إلى مشاريع ناجحة وذلك من خلال مجموعة من
+            الخطاوت والمعلومات التى تساعدهم على الوصول إلى هدفهم بسهولة دون
+            تعقيد من خلال خبرتنا فى المجالات المتنوعة من خلال:
+          </p>
+          <ul class="present-list">
+            <li>
+              <figure>
+                <img src="images/check-icon.png" alt="icon" />
+              </figure>
+              <p class="present-text">
+                توفير وصول فوري إلى مكتبة غنية من الموارد التعليمية، تشمل مقالات
+                تغطي مواضيع مثل إدارة الوقت، وإدارة الفريق، والابتكار والخطوات
+                المتعددة لتحقيق هدفك.
+              </p>
+            </li>
+            <li>
+              <figure>
+                <img src="images/check-icon.png" alt="icon" />
+              </figure>
+              <p class="present-text">
+                نقوم بتقييم فكرتك بعمق، مع التركيز على نقاط القوة والضعف والفرص
+                المتاحة. يتيح ذلك لك فهم السوق وتحديد مدى جاهزية فكرتك للتطوير.
+              </p>
+            </li>
+            <li>
+              <figure>
+                <img src="images/check-icon.png" alt="icon" />
+              </figure>
+              <p class="present-text">
+                الإطلاع على قصص النجاح لرواد الأعمال السابقين والإستفادة من
+                خبراتهم وتحفيزهم.
+              </p>
+            </li>
+            <li>
+              <figure>
+                <img src="images/check-icon.png" alt="icon" />
+              </figure>
+              <p class="present-text">
+                توافر خطة عمل مخصصة تأخذ بعين الاعتبار متطلبات فكرتك وتحقق
+                الأهداف التي حددتها.
+              </p>
+            </li>
+            <li>
+              <figure>
+                <img src="images/check-icon.png" alt="icon" />
+              </figure>
+              <p class="present-text">
+                دعم فني يساعدك في كل خطوة فى طريق تحقيق أهدافك ونجاح فكرتك.
+              </p>
+            </li>
+          </ul>
+          <p class="present-pargh">
+            انضم إلينا اليوم وابدأ رحلتك نحو تطوير وتحسين فكرتك الريادية بثقة
+            وفعالية.
+          </p>
+          <div class="present-join-cont">
+            <a href="#" class="main-btn">انضم إلينا الأن!</a>
+            <div class="join-flex">
+              <figure><img src="images/join-img.png" alt="join-img" /></figure>
+              <p class="join-text">أكثر من 10 ألاف رائد أعمال عمل معنا</p>
             </div>
-          </a>
-          <a
-            href="#"
-            class="stadium-card"
-            data-sal="slide-down"
-            style="--sal-delay: 0.45s"
-          >
-            <figure>
-              <img src="images/mallab/stadium.png" alt="stadium" />
-            </figure>
-            <div class="stadium-content">
-              <h5 class="stadium-title">تحدي فريق الاسطورة</h5>
-              <span class="stadium-name">
-                <i class="iconsax" icon-name="flag-1"></i>
-                <span>استاد النيل</span>
-              </span>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="stadium-card"
-            data-sal="slide-down"
-            style="--sal-delay: 0.6s"
-          >
-            <figure>
-              <img src="images/mallab/stadium.png" alt="stadium" />
-            </figure>
-            <div class="stadium-content">
-              <h5 class="stadium-title">تحدي فريق الاسطورة</h5>
-              <span class="stadium-name">
-                <i class="iconsax" icon-name="flag-1"></i>
-                <span>استاد النيل</span>
-              </span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- mallab-section  -->
-    <!-- academy-section  -->
-    <section class="academy-section">
-      <div class="container custom-container">
-        <div class="academy-cont">
-          <div class="academy-content">
-            <h3 class="about-title">اشترك الان في الاكادمية احجز وابدء</h3>
-            <div class="mallab-pargh">
-              الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات المميزة،
-              مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل كافة الأعمال
-              التشغيلية والإدارية لهم الملاعب يقدم لملاك الملاعب والأكاديميات
-            </div>
-          </div>
-          <div class="academy-img">
-            <figure>
-              <img class="mallab-bg" src="images/academy/img.png" alt="img" />
-            </figure>
-          </div>
-        </div>
-        <div class="academy-items">
-          <div
-            class="academy-item"
-            data-sal="fade-in"
-            style="--sal-delay: 0.3s"
-          >
-            <figure>
-              <img src="images/academy/01.png" alt="academy-logo" />
-            </figure>
-            <h4 class="academy-name">اكادمية سافا بالدمام</h4>
-            <span class="academy-age">من سن ١٨ الي ٢١</span>
-          </div>
-          <div
-            class="academy-item"
-            data-sal="fade-in"
-            style="--sal-delay: 0.45s"
-          >
-            <figure>
-              <img src="images/academy/02.png" alt="academy-logo" />
-            </figure>
-            <h4 class="academy-name">اكادمية ساس بالدمام</h4>
-            <span class="academy-age">من سن ١٨ الي ٢١</span>
-          </div>
-          <div
-            class="academy-item"
-            data-sal="fade-in"
-            style="--sal-delay: 0.6s"
-          >
-            <figure>
-              <img src="images/academy/03.png" alt="academy-logo" />
-            </figure>
-            <h4 class="academy-name">اكادمية القلعة بالدمام</h4>
-            <span class="academy-age">من سن ١٨ الي ٢١</span>
           </div>
         </div>
       </div>
     </section>
-    <!-- academy-section  -->
-    <!-- Championship-section  -->
-    <section class="championship-section">
-      <div class="container custom-container">
-        <div class="championship-cont">
-          <div class="mallab-img">
+    <!-- present-section   -->
+    <!-- work-section   -->
+    <section class="work-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-cont">
             <figure>
-              <img
-                class="mallab-bg"
-                src="images/championship/bg.png"
-                alt="bg"
-              />
-              <img
-                class="mallab-hero"
-                src="images/championship/hero.png"
-                alt="bg"
-              />
+              <img src="images/star.png" alt="icon" />
             </figure>
+            <span class="head-num">03</span>
           </div>
-          <div class="mallab-content">
-            <h3 class="about-title">احجز بطولاتك الان بكل سهولة وسرعة</h3>
-            <div class="mallab-pargh">
-              الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات المميزة،
-              مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل كافة الأعمال
-              التشغيلية والإدارية لهم الملاعب يقدم لملاك الملاعب والأكاديميات
+          <span class="head-text">كيف نعمل؟</span>
+        </div>
+        <p class="work-text">
+          يمكنك بخطوات بسيطة أن تحقق هدفك وتنجح فى مجالك الذى تريد من خلال 3
+          خطوات رئيسية ستستطيع بعدها تحقيق النجاح الذى تريد بمشيئة الله تعالى.
+        </p>
+        <div class="work-cont">
+          <figure class="work-bg">
+            <img src="images/work/work-line.png" alt="bg" />
+          </figure>
+          <div class="work-item">
+            <figure>
+              <img src="images/work/01.png" alt="icon" />
+            </figure>
+            <h4 class="work-head">الإجتماع</h4>
+            <p class="work-pargh">
+              سنقوم بعقد اجتماع نفهم من خلاله توجهاتك وطموحاتك ونتناقش فيها
+              لتحديد النقاط الأساسية للمشروع
+            </p>
+          </div>
+          <div class="work-item">
+            <figure>
+              <img src="images/work/02.png" alt="icon" />
+            </figure>
+            <h4 class="work-head">تجهيز الأفكار</h4>
+            <p class="work-pargh">
+              سنقوم بعرض مجموعة من الأفكار المميزة من قبل فريق العمل لدينا
+              للوصول إلى أفضل فكرة تناسب مجالك ومشروعك
+            </p>
+          </div>
+          <div class="work-item">
+            <figure>
+              <img src="images/work/03.png" alt="icon" />
+            </figure>
+            <h4 class="work-head">تحديد المحتوى</h4>
+            <p class="work-pargh">
+              سنقوم بتحديد المحتوى المخصص لكل مشروع على حدة للوصول إلى أفضل
+              نتيجة ممكنة بعون الله تعالى
+            </p>
+          </div>
+          <div class="work-item">
+            <figure>
+              <img src="images/work/04.png" alt="icon" />
+            </figure>
+            <h4 class="work-head">الإجتماع</h4>
+            <p class="work-pargh">
+              بعد اتباعك جميع التوجيهات والخطوات والاستعانة بالخبرات التى لدينا
+              سنقوم باختبار السوق وتحديد المنافسين.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work-section   -->
+    <!-- benefits-section   -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-cont">
+            <figure>
+              <img src="images/star.png" alt="icon" />
+            </figure>
+            <span class="head-num">04</span>
+          </div>
+          <span class="head-text">ما ستحصل عليه</span>
+        </div>
+        <div class="benefits-cont">
+          <div class="benefits-item">
+            <span class="benefits-num">01</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/01.png" alt="icon" /></figure>
+              <span class="benefits-text">تحديــــــد المـــوجز</span>
+            </div>
+            <p class="benefits-pargh">
+              لمحة عامة موجزة عن خطة التسويق والأهداف والغايات الرئيسية
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">02</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/02.png" alt="icon" /></figure>
+              <span class="benefits-text">نظــــــــرة عـــــــــامة</span>
+            </div>
+            <p class="benefits-pargh">
+              تحديد القيم الأساسية وجوهر العلامة التجارية وتحليل السوق
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">03</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/03.png" alt="icon" /></figure>
+              <span class="benefits-text">نظرة عامـــة على السوق</span>
+            </div>
+            <p class="benefits-pargh">
+              التركيبة السكانية والنفسية للسوق المستهدفة وتحليل المنافسين
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">04</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/04.png" alt="icon" /></figure>
+              <span class="benefits-text">تحــليــــل SWOT</span>
+            </div>
+            <p class="benefits-pargh">
+              تحليل نقاط القوة والضعف والفرص والتهديدات لمشروعك
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">05</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/05.png" alt="icon" /></figure>
+              <span class="benefits-text">أهـــــداف الســـوق</span>
+            </div>
+            <p class="benefits-pargh">
+              أهداف محددة وقابلة للقياس وقابلة للتحقيق وذات صلة ومحددة زمنياً
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">06</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/06.png" alt="icon" /></figure>
+              <span class="benefits-text">استراتيجيات التســـــــــويق</span>
+            </div>
+            <p class="benefits-pargh">
+              استراتيجيات المنتجات والخدمات والتسعير والتوزيع والترويج
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">07</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/07.png" alt="icon" /></figure>
+              <span class="benefits-text">تكـتـيكــات الســــــوق</span>
+            </div>
+            <p class="benefits-pargh">
+              منها الإعلان والعلاقات العامة والعروض الترويجية والتسويق الرقمى.
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">08</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/08.png" alt="icon" /></figure>
+              <span class="benefits-text">تحـــديــــد الميزانية</span>
+            </div>
+            <p class="benefits-pargh">
+              تحديد مخططات الميزانية التفصيلية لكل نشاط تسويقي
+            </p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">09</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/09.png" alt="icon" /></figure>
+              <span class="benefits-text">مقـاييـس الأداء</span>
+            </div>
+            <p class="benefits-pargh">مؤشرات الأداء الرئيسية لقياس النجاح</p>
+          </div>
+          <div class="benefits-item">
+            <span class="benefits-num">10</span>
+            <div class="benefits-box">
+              <figure><img src="images/benefits/10.png" alt="icon" /></figure>
+              <span class="benefits-text">خـــــطـــــة التنــفــيــذ</span>
+            </div>
+            <p class="benefits-pargh">
+              تحديد الجدول الزمنى للأنشطة، وتحديد المسؤليات والملكية
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- benefits-section   -->
+    <!-- fields-section   -->
+    <section class="fields-section">
+      <div class="container">
+        <div class="section-header-cont">
+          <div class="section-head">
+            <div class="head-cont">
+              <figure>
+                <img src="images/star.png" alt="icon" />
+              </figure>
+              <span class="head-num">05</span>
+            </div>
+            <span class="head-text">ما المجالات التى نعمل بها</span>
+          </div>
+          <div class="swiper-btn-cont">
+            <div class="swiper-btn-prev swiper-btn">
+              <i class="iconsax" icon-name="chevron-right"></i>
+            </div>
+            <div class="swiper-btn-next swiper-btn">
+              <i class="iconsax" icon-name="chevron-left"></i>
             </div>
           </div>
         </div>
-        <div class="championship-slider">
+      </div>
+      <div class="swiper-cont">
+        <div class="fields-slider">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="championship-item">
+                <div class="fields-item">
                   <figure>
-                    <img src="images/championship/01.png" alt="academy-logo" />
+                    <img src="images/fields/01.png" alt="icon" />
                   </figure>
-                  <h4 class="championship-name">بطولة زاد</h4>
-                  <span class="championship-desc"
-                    >بطولة مجمعة بجوائز تصل الي الف ريال</span
+                  <h4 class="fields-name">تطوير مواقع الويب</h4>
+                  <span class="fields-pargh"
+                    >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.</span
                   >
+                  <a href="#" class="show-ancor"
+                    ><span>شاهد المزيد</span>
+                    <i class="iconsax" icon-name="arrow-left"></i>
+                  </a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="championship-item">
+                <div class="fields-item">
                   <figure>
-                    <img src="images/championship/02.png" alt="academy-logo" />
+                    <img src="images/fields/02.png" alt="icon" />
                   </figure>
-                  <h4 class="championship-name">بطولة زاد</h4>
-                  <span class="championship-desc"
-                    >بطولة مجمعة بجوائز تصل الي الف ريال</span
+                  <h4 class="fields-name">تطوير تطبيق جوال</h4>
+                  <span class="fields-pargh"
+                    >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.</span
                   >
+                  <a href="#" class="show-ancor"
+                    ><span>شاهد المزيد</span>
+                    <i class="iconsax" icon-name="arrow-left"></i>
+                  </a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="championship-item">
+                <div class="fields-item">
                   <figure>
-                    <img src="images/championship/03.png" alt="academy-logo" />
+                    <img src="images/fields/03.png" alt="icon" />
                   </figure>
-                  <h4 class="championship-name">بطولة زاد</h4>
-                  <span class="championship-desc"
-                    >بطولة مجمعة بجوائز تصل الي الف ريال</span
+                  <h4 class="fields-name">انشاء متجر اكسسوارات جوال</h4>
+                  <span class="fields-pargh"
+                    >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    الحروف التى يولدها التطبيق.</span
                   >
+                  <a href="#" class="show-ancor"
+                    ><span>شاهد المزيد</span>
+                    <i class="iconsax" icon-name="arrow-left"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fields-item">
+                  <figure>
+                    <img src="images/fields/04.png" alt="icon" />
+                  </figure>
+                  <h4 class="fields-name">متجر ملابس</h4>
+                  <span class="fields-pargh"
+                    >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
+                    الحروف التى يولدها التطبيق.</span
+                  >
+                  <a href="#" class="show-ancor"
+                    ><span>شاهد المزيد</span>
+                    <i class="iconsax" icon-name="arrow-left"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-btn-prev swiper-btn">
-            <i class="iconsax" icon-name="arrow-right"></i>
-          </div>
-          <div class="swiper-btn-next swiper-btn">
-            <i class="iconsax" icon-name="arrow-left"></i>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
+      <div class="container">
+        <p class="fields-text">
+          يمكنك الإستعانة بخبراتنا فى ادارة الأعمال المختلفة من خلال مجموعة من
+          الأعمال المتنوعة، كل ما عليك هو اختيار العمال الذى تريده وبعدها اترك
+          الموضوع لنا.
+        </p>
+        <a href="#" class="custom-ancor">شاهد أحدث المجالات</a>
+      </div>
     </section>
-    <!-- Championship-section  -->
-    <!-- store-section  -->
-    <section class="store-section">
-      <div class="container custom-container">
-        <div class="about-cont">
-          <div class="about-content">
-            <h3 class="store-title">تصفح المتجر الخاص بنا</h3>
-            <p class="about-pargh">
-              الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات المميزة،
-              مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل كافة الأعمال
-              التشغيلية والإدارية لهم الملاعب يقدم لملاك الملاعب والأكاديميات
-            </p>
-            <a href="#" class="about-link">تصفح الان</a>
+    <!-- fields-section   -->
+    <!-- blog-section   -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="section-header-cont">
+          <div class="section-head">
+            <div class="head-cont">
+              <figure>
+                <img src="images/star.png" alt="icon" />
+              </figure>
+              <span class="head-num">06</span>
+            </div>
+            <span class="head-text">أخر المقالات</span>
           </div>
-          <div class="store-img">
+          <div class="swiper-btn-cont">
+            <div class="swiper-btn-prev swiper-btn">
+              <i class="iconsax" icon-name="chevron-right"></i>
+            </div>
+            <div class="swiper-btn-next swiper-btn">
+              <i class="iconsax" icon-name="chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-cont">
+        <div class="blog-slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <span class="hint">تصنيف المقالة</span>
+                  <figure class="loading-img">
+                    <img
+                      class="lazy-img img-fluid"
+                      data-src="images/blog/01.png"
+                      alt="blog"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <h4 class="blog-name">كيف تبدع فى مجالك 2</h4>
+                    <span class="blog-pargh"
+                      >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                      تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                      مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                      عدد الحروف التى يولدها التطبيق.</span
+                    >
+                    <a href="#" class="show-ancor"
+                      ><span>شاهد المزيد</span>
+                      <i class="iconsax" icon-name="arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <span class="hint">تصنيف المقالة</span>
+                  <figure class="loading-img">
+                    <img
+                      class="lazy-img img-fluid"
+                      data-src="images/blog/02.png"
+                      alt="blog"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <h4 class="blog-name">كيف تبدع فى مجالك 1</h4>
+                    <span class="blog-pargh"
+                      >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                      تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                      مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                      عدد الحروف التى يولدها التطبيق.</span
+                    >
+                    <a href="#" class="show-ancor"
+                      ><span>شاهد المزيد</span>
+                      <i class="iconsax" icon-name="arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <span class="hint">تصنيف المقالة</span>
+                  <figure class="loading-img">
+                    <img
+                      class="lazy-img img-fluid"
+                      data-src="images/blog/03.png"
+                      alt="blog"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <h4 class="blog-name">التفوق في عالم الأعمال</h4>
+                    <span class="blog-pargh"
+                      >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                      تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                      مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                      عدد الحروف التى يولدها التطبيق.</span
+                    >
+                    <a href="#" class="show-ancor"
+                      ><span>شاهد المزيد</span>
+                      <i class="iconsax" icon-name="arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <span class="hint">تصنيف المقالة</span>
+                  <figure class="loading-img">
+                    <img
+                      class="lazy-img img-fluid"
+                      data-src="images/blog/04.png"
+                      alt="blog"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <h4 class="blog-name">تحولات عالم الأعمال</h4>
+                    <span class="blog-pargh"
+                      >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                      تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد
+                      مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة
+                      عدد الحروف التى يولدها التطبيق.</span
+                    >
+                    <a href="#" class="show-ancor"
+                      ><span>شاهد المزيد</span>
+                      <i class="iconsax" icon-name="arrow-left"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <a href="#" class="custom-ancor">شاهد أحدث المجالات</a>
+      </div>
+    </section>
+    <!-- blog-section   -->
+    <!-- gallery-section   -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-cont">
             <figure>
-              <img src="images/store.png" alt="store-img" />
+              <img src="images/star.png" alt="icon" />
+            </figure>
+            <span class="head-num">07</span>
+          </div>
+          <span class="head-text">معرض الصور</span>
+        </div>
+        <div class="gallery-cont">
+          <a
+            class="gallery-item"
+            href="images/gallery/01.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/01.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/02.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/02.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/03.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/03.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/04.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/04.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/05.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/05.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/06.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/06.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/07.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/07.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+          <a
+            class="gallery-item"
+            href="images/gallery/08.png"
+            data-fancybox="gallery"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img img-fluid"
+                data-src="images/gallery/08.png"
+                alt="gallery"
+              />
+            </figure>
+            <div class="gallery-content">
+              <h3 class="gallery-name">اسم الصورة</h3>
+              <p class="gallery-desc">وصف سريع</p>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="custom-ancor">شاهد جميع الصور</a>
+      </div>
+    </section>
+    <!-- gallery-section   -->
+    <!-- video-section   -->
+    <section class="video-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-cont">
+            <figure>
+              <img src="images/star.png" alt="icon" />
+            </figure>
+            <span class="head-num">08</span>
+          </div>
+          <span class="head-text">أخر الفيديوهات</span>
+        </div>
+        <div class="video-cont">
+          <a
+            class="video-item custom-item"
+            href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            data-fancybox="vision"
+          >
+            <figure class="loading-img">
+              <video width="320" height="240" autoplay muted>
+                <source
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+            <div class="video-content">
+              <div class="video-flex">
+                <h3 class="video-name">
+                  رحلتي نحو النجاح: قصة شخصية لتحفيز الآخرين
+                </h3>
+                <span class="video-length">23 دقيقة</span>
+              </div>
+              <p class="video-desc">
+                في هذا الفيديو، سأشارككم رحلتي الشخصية نحو الإلهام والتحفيز.
+                سنستعرض لحظات من حياتي اليومية ورحلتي في تحقيق الأهداف. تعالوا
+                نشارك معًا في هذه القصة الملهمة ونستفيد من تجارب الحياة التي قد
+                تلهم الآخرين."
+              </p>
+            </div>
+            <span class="video-icon">
+              <i class="iconsax" icon-name="play"></i>
+            </span>
+          </a>
+          <a
+            class="video-item"
+            href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            data-fancybox="vision"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img"
+                data-src="images/gallery/02.png"
+                alt="video"
+              />
+            </figure>
+            <div class="video-content">
+              <h3 class="video-name">
+                رحلتي نحو النجاح: قصة شخصية لتحفيز الآخرين
+              </h3>
+              <p class="video-desc">
+                في هذا الفيديو، سأشارككم رحلتي الشخصية نحو الإلهام والتحفيز.
+                سنستعرض لحظات من حياتي اليومية ورحلتي في تحقيق الأهداف. تعالوا
+                نشارك معًا في هذه القصة الملهمة ونستفيد من تجارب الحياة التي قد
+                تلهم الآخرين."
+              </p>
+            </div>
+            <span class="video-icon">
+              <i class="iconsax" icon-name="play"></i>
+            </span>
+          </a>
+          <a
+            class="video-item"
+            href="images/gallery/06.png"
+            data-fancybox="vision"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img"
+                data-src="images/gallery/05.png"
+                alt="video"
+              />
+            </figure>
+            <div class="video-content">
+              <h3 class="video-name">اسم الفيديو</h3>
+              <p class="video-desc">وصف سريع</p>
+            </div>
+            <span class="video-icon">
+              <i class="iconsax" icon-name="play"></i>
+            </span>
+          </a>
+          <a
+            class="video-item"
+            href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            data-fancybox="vision"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img"
+                data-src="images/gallery/03.png"
+                alt="video"
+              />
+            </figure>
+            <div class="video-content">
+              <h3 class="video-name">
+                رحلتي نحو النجاح: قصة شخصية لتحفيز الآخرين
+              </h3>
+              <p class="video-desc">
+                في هذا الفيديو، سأشارككم رحلتي الشخصية نحو الإلهام والتحفيز.
+                سنستعرض لحظات من حياتي اليومية ورحلتي في تحقيق الأهداف. تعالوا
+                نشارك معًا في هذه القصة الملهمة ونستفيد من تجارب الحياة التي قد
+                تلهم الآخرين."
+              </p>
+            </div>
+            <span class="video-icon">
+              <i class="iconsax" icon-name="play"></i>
+            </span>
+          </a>
+          <a
+            class="video-item"
+            href="images/gallery/04.png"
+            data-fancybox="vision"
+          >
+            <figure class="loading-img">
+              <img
+                class="lazy-img"
+                data-src="images/gallery/04.png"
+                alt="video"
+              />
+            </figure>
+            <div class="video-content">
+              <h3 class="video-name">اسم الفيديو</h3>
+              <p class="video-desc">وصف سريع</p>
+            </div>
+            <span class="video-icon">
+              <i class="iconsax" icon-name="play"></i>
+            </span>
+          </a>
+        </div>
+        <a href="#" class="custom-ancor">شاهد جميع الفيديوهات</a>
+      </div>
+    </section>
+    <!-- video-section   -->
+    <!-- subscribe-section   -->
+    <section class="subscribe-section">
+      <div class="container">
+        <div class="subscribe-cont">
+          <div class="subscribe-content">
+            <h3 class="subscribe-head">اشترك الأن فى خدمتنا البريدية</h3>
+            <div class="subscribe-pargh">
+              اشترك الآن في خدمتنا البريدية لتكون أول من يحصل على أحدث المحتويات
+              والعروض الحصرية! احصل على أخبارنا المميزة ونصائح حصرية تساعدك في
+              تحسين نواحي حياتك. ستصلك معلوماتنا المفيدة والتحفيزية مباشرة إلى
+              صندوق البريد الإلكتروني الخاص بك. لا تفوت فرصة الاستفادة من محتوى
+              حصري وتحديثات دورية، اشترك اليوم وابدأ رحلتك نحو التحسين الشخصي
+              والاستمتاع بمزيد من المحتوى الملهم!
+            </div>
+            <div class="email-cont">
+              <form action="">
+                <input class="email-input" type="email" placeholder="اكتب بريدك الإلكترونى" />
+                <button class="email-btn">
+                  <i class="iconsax" icon-name="arrow-left"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="subscribe-img">
+            <figure class="loading-img">
+              <img
+                class="lazy-img"
+                data-src="images/email-img.png"
+                alt="email-img"
+              />
             </figure>
           </div>
         </div>
       </div>
     </section>
-    <!-- store-section  -->
-    <!-- video-section  -->
-    <section class="video-section">
-      <div class="container">
-        <div class="video-cont">
-          <div class="about-content">
-            <div class="video-content">
-              <h3 class="store-title">شاهد المقاطع</h3>
-              <p class="about-pargh">
-                الملاعب يقدم لملاك الملاعب والأكاديميات العديد من الخدمات
-                المميزة، مثل تسويقهم لمئات الآلاف من اللاعبين، وتسهيل
-              </p>
-            </div>
-          </div>
-          <div class="parent-cont">
-            <div class="parent_slide">
-              <div class="block1">
-                <div class="slide">
-                  <a
-                    href="images/videos/SampleVideo_1280x720_20mb.mp4"
-                    type="video/mp4"
-                    data-fancybox="vision"
-                  >
-                    <figure>
-                      <video width="320" height="240">
-                        <source
-                          src="images/videos/SampleVideo_1280x720_20mb.mp4"
-                          type="video/mp4"
-                        />
-                        <source
-                          src="images/videos/SampleVideo_1280x720_20mb.mkv"
-                          type="video/mkv"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
-                    </figure>
-                  </a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/02.png" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/02.png" alt="videos" />
-                    </figure>
-                  </a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/03.jpg" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/03.jpg" alt="videos" /></figure
-                  ></a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/04.jpg" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/04.jpg" alt="videos" /></figure
-                  ></a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/05.jpg" data-fancybox="post"
-                    ><figure>
-                      <img src="images/videos/05.jpg" alt="videos" /></figure
-                  ></a>
-                </div>
-              </div>
-              <div class="block2">
-                <div class="slide">
-                  <a href="images/videos/06.jpg" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/06.jpg" alt="videos" />
-                    </figure>
-                  </a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/07.jpg" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/07.jpg" alt="videos" />
-                    </figure>
-                  </a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/08.jpg" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/08.jpg" alt="videos" /></figure
-                  ></a>
-                </div>
-                <div class="slide">
-                  <a href="images/videos/08.jpg" data-fancybox="post">
-                    <figure>
-                      <img src="images/videos/08.jpg" alt="videos" /></figure
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- video-section  -->
-    <!-- contact-section  -->
-    <section class="contact-section">
-      <div class="contact-background">
-        <span></span>
-      </div>
-      <div class="container">
-        <div class="contact-cont">
-          <div class="contact-content">
-            <h3 class="contact-title">تواصل معنا الان</h3>
-            <p class="contact-pargh">
-              اكتشف ميزات ملاعب التي ستغير قواعد اللعبة وانظر كيف يمكننا مساعدتك
-              على النجاح!
-            </p>
-          </div>
-          <div class="contact-form">
-            <h4 class="contact-head">تواصل معنا بكل سهولة</h4>
-            <p class="contact-text">
-              راسلني إذا كنت تريد العمل معًا على شيء مثير. أو هل تحتاج إلى
-              مساعدتنا؟ لا تتردد في الاتصال بنا.
-            </p>
-            <form action="">
-              <div class="contact-input">
-                <div class="input-grid">
-                  <div class="form-group">
-                    <label class="form-label"> الاسم </label>
-                    <input type="text" class="form-input" placeholder="name" />
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label"> الايميل</label>
-                    <input
-                      type="email"
-                      class="form-input"
-                      placeholder="example@gmail.com"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label"> العنوان </label>
-                  <input type="text" class="form-input" placeholder="name" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label"> الرسالة </label>
-                  <textarea class="form-input"></textarea>
-                </div>
-              </div>
-              <button type="submit" class="submit-btn">ارسل الان</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact-section  -->
+    <!-- subscribe-section   -->
 
     <!-- footer section -->
     <footer>
@@ -576,33 +1170,5 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/script.js"></script>
-
-    <!-- Start custom Modal -->
-    <div class="modal fade custom-modal" id="custom-modal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">
-              <i class="las la-times"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="package-details">
-              <h2 class="package-details-head">
-                <i class="fa-light fa-circle-exclamation"></i>
-                Individual Package Info :
-              </h2>
-              <ul>
-                <li>Full access to all features within the app.</li>
-                <li>Utilize calculators and counters provided in the app.</li>
-                <li>Access to a diverse range of coaches.</li>
-                <li>Extensive library of 360-degree videos.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End custom Modal -->
   </body>
 </html>

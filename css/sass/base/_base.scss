@@ -4,9 +4,13 @@ body {
   font-style: normal;
   font-weight: 400;
   background-color: $back;
-  padding-top: 200px;
+  padding-top: 163px;
+  @include tr;
   @include max-991 {
-    padding-top: 100px;
+    padding-top: 170.22px;
+  }
+  &.padding-search{
+    padding-top: 224.22px;
   }
 }
 body.internal-body {
@@ -134,7 +138,7 @@ html[dir="ltr"] .progress-bar {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1280px;
+    max-width: 1320px;
   }
 }
 /*lazyload*/
