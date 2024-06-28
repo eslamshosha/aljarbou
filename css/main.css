@@ -2298,13 +2298,16 @@ html[dir=ltr] .email-btn i {
 /*                                   footer                            */
 footer {
   text-align: center;
-  padding: 55px 0 85px;
+  background-color: #453b2f;
+  padding: 55px 0 60px;
 }
 
 .footer-cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 43px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1019607843);
 }
 @media only screen and (max-width: 991px) {
   .footer-cont {
@@ -2318,38 +2321,143 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  max-width: 536px;
 }
 @media only screen and (max-width: 991px) {
   .footer-info {
     align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.footer-info .email-cont {
+  max-width: 443px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  width: 66.58px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.footer-logo img {
+  max-width: 100%;
+}
+
+.news-span {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .news-span {
+    font-size: 16px;
+  }
+}
+
+.footer-head {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.footer-email {
+  font-weight: 800;
+  font-size: 29px;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none !important;
+}
+.footer-email:hover {
+  color: var(--main-color);
+}
+@media only screen and (max-width: 991px) {
+  .footer-email {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+}
+
+.footer-tel {
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--text-color);
+  margin-bottom: 45px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none !important;
+}
+.footer-tel:hover {
+  color: var(--main-color);
+}
+@media only screen and (max-width: 991px) {
+  .footer-tel {
+    margin: 0 auto 30px;
+    font-size: 24px;
+  }
+}
+
+.footer-contact {
+  text-align: start;
+}
+@media only screen and (max-width: 991px) {
+  .footer-contact {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.footer-rights {
+  padding-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .footer-rights {
+    flex-direction: column-reverse;
     text-align: center;
   }
 }
 
 .copy-rights {
   font-weight: 400;
-  font-size: 15px;
-  color: #0f0f0f;
+  font-size: 12px;
+  color: var(--text-color);
 }
 
 .social {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .social a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  color: var(--main-hover);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.0784313725);
+  font-size: 15px;
+  color: var(--white-color);
   text-decoration: none !important;
   transition: all 0.3s ease-in-out;
 }
 .social a:hover {
-  color: var(--main-color);
+  color: var(--white-color);
+  background-color: var(--main-color);
 }
 
 .footer-list ul {
@@ -2363,26 +2471,23 @@ footer {
 .footer-list ul a {
   font-weight: 400;
   font-size: 16px;
-  color: #0f0f0f;
+  color: var(--text-color);
   text-decoration: none !important;
   transition: all 0.3s ease-in-out;
 }
 .footer-list ul a:hover {
-  color: var(--main-hover);
+  color: var(--main-color);
+}
+@media only screen and (max-width: 767px) {
+  .footer-list ul a {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .footer-list ul {
-    gap: 20px;
-    flex-direction: column;
-  }
-}
-
-.empty-div {
-  display: none;
-}
-@media only screen and (min-width: 1440px) {
-  .empty-div {
-    display: block;
-    width: 194px;
+    gap: 16px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
