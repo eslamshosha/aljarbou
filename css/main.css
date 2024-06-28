@@ -1312,11 +1312,11 @@ html[dir=ltr] .about-title img {
 .join-flex {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 @media only screen and (max-width: 991px) {
   .join-flex {
     flex-wrap: wrap;
-    gap: 15px;
   }
 }
 

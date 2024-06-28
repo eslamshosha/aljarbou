@@ -480,9 +480,9 @@
 .join-flex {
   display: flex;
   align-items: center;
+  gap: 15px;
   @include max-991 {
     flex-wrap: wrap;
-    gap: 15px;
   }
 }
 .join-text {
