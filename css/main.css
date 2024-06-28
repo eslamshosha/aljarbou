@@ -845,6 +845,9 @@ header {
   position: relative;
   max-width: 30px;
 }
+html[dir=ltr] .main-welcome img {
+  transform: scaleX(-1);
+}
 .main-welcome .text-before {
   position: absolute;
   inset-inline-start: 0px;
@@ -1126,6 +1129,9 @@ header {
   display: block;
   margin-bottom: 5px;
 }
+html[dir=ltr] .about-title img {
+  transform: scaleX(-1);
+}
 .about-title .text-start {
   padding-inline-start: 50px;
   display: block;
@@ -1322,7 +1328,7 @@ header {
 }
 @media only screen and (max-width: 991px) {
   .join-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1375,6 +1381,9 @@ header {
     display: none;
   }
 }
+html[dir=ltr] .work-bg {
+  transform: scaleX(-1);
+}
 
 .work-item {
   display: flex;
@@ -1394,6 +1403,7 @@ header {
     width: 100%;
     overflow: hidden;
     padding: 38px 20px 25px;
+    height: 100%;
   }
 }
 .work-item figure {
@@ -1531,6 +1541,7 @@ header {
   margin: 0;
   max-width: 124px;
   text-align: center;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 991px) {
   .benefits-text {
@@ -1624,6 +1635,9 @@ header {
   font-size: 16px;
   color: var(--text-color);
   transition: all 0.3s ease-in-out;
+}
+html[dir=ltr] .swiper-btn-cont .swiper-btn {
+  transform: scaleX(-1);
 }
 .swiper-btn-cont .swiper-btn i {
   z-index: 2;

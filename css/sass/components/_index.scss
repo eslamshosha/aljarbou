@@ -47,6 +47,9 @@
   img {
     position: relative;
     max-width: 30px;
+    html[dir="ltr"] & {
+      transform: scaleX(-1);
+    }
   }
   .text-before {
     position: absolute;
@@ -321,6 +324,9 @@
   img {
     display: block;
     margin-bottom: 5px;
+    html[dir="ltr"] & {
+      transform: scaleX(-1);
+    }
   }
   .text-start {
     padding-inline-start: 50px;
@@ -485,7 +491,7 @@
   color: $white;
   margin: 0;
   @include max-991 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 /*                       present-section                           */
@@ -525,6 +531,9 @@
   @include max-991 {
     display: none;
   }
+  html[dir="ltr"] & {
+    transform: scaleX(-1);
+  }
 }
 .work-item {
   display: flex;
@@ -542,6 +551,7 @@
     width: 100%;
     overflow: hidden;
     padding: 38px 20px 25px;
+    height: 100%;
   }
   figure {
     width: 47px;
@@ -653,6 +663,7 @@
   margin: 0;
   max-width: 124px;
   text-align: center;
+  text-transform: capitalize;
   @include max-991 {
     font-size: 16px;
     line-height: normal;
@@ -731,6 +742,9 @@
   font-size: 16px;
   color: $text;
   transition: all 0.3s ease-in-out;
+  html[dir="ltr"] & {
+    transform: scaleX(-1);
+  }
   i {
     z-index: 2;
   }
