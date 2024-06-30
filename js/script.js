@@ -190,3 +190,16 @@ function preloadImage(img) {
     img.parentElement.parentElement.classList.add("lazy-head-img");
   };
 }
+
+//form wizard
+function activeStep(ele, stepId) {
+  var nextStep = "#step_" + stepId;
+  $(".step").not(nextStep).hide();
+  $(nextStep).show();
+  if ($(ele).hasClass("btn-irv")) {
+    var activeHead = stepId;
+    var activeStep = "#activeStep-" + activeHead;
+    $(activeStep).addClass("active");
+    $(".progressbar li").not(activeStep).removeClass("active");
+  }
+}
