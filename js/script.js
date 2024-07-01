@@ -187,7 +187,6 @@ function preloadImage(img) {
   img.onload = function () {
     img.parentElement.classList.remove("loading-img");
     img.parentElement.classList.add("loaded-img");
-    img.parentElement.parentElement.classList.add("lazy-head-img");
   };
 }
 

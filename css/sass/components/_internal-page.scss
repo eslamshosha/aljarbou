@@ -18,7 +18,7 @@
   figure {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     @include max-991 {
       height: 100vh;
@@ -54,6 +54,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-height: 100vh;
   .main-welcome {
     margin: 0 auto 20px;
   }
@@ -69,7 +70,12 @@
   align-items: center;
   text-align: center;
   .main-btn {
+    margin: 0;
     margin-bottom: 40px;
+    @include max-1200 {
+      height: 48px;
+      font-size: 18px;
+    }
   }
 }
 .mainbg-name {
@@ -91,8 +97,9 @@
   @include min-1440 {
     font-size: 18px;
   }
-  @include max-767 {
+  @include max-1200 {
     font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 .page-title {
@@ -105,8 +112,9 @@
     font-size: 64px;
     margin-bottom: 30px;
   }
-  @include max-767 {
+  @include max-1200 {
     font-size: 34px;
+    margin-bottom: 20px;
   }
 }
 .page-pargh {
@@ -121,10 +129,13 @@
     font-size: 20px;
     margin: 0 auto 40px;
   }
-  @include max-767 {
+  @include max-1200 {
     font-size: 14px;
     line-height: unset;
-    display: none;
+    margin: 0 auto 20px;
+  }
+  @include max-767 {
+    font-size: 12px;
   }
 }
 /* form wizard*/
@@ -586,3 +597,152 @@
     border-color: $main;
   }
 }
+.mainbg {
+  .custom-btn {
+    font-size: 24px;
+    height: 69px;
+    border-radius: 35px;
+    @include max-1200 {
+      font-size: 16px;
+      height: 47px;
+    }
+    @include max-767 {
+      margin-bottom: 20px;
+    }
+  }
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: $main;
+  margin-bottom: 0;
+}
+/*                       blog-section                           */
+.blogs {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ddd9d499;
+  margin-bottom: 60px;
+  &:last-of-type {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+.blog-cont {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  @include max-991 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-item:first-of-type {
+    grid-row: 1/4;
+    flex-direction: column;
+    figure {
+      aspect-ratio: 655/390;
+      max-width: 100%;
+    }
+    .blog-content {
+      padding: 23px 27px;
+    }
+  }
+}
+.blog-item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  background: #32302d;
+  @include max-991 {
+    flex-direction: column;
+  }
+  figure {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+    max-width: 187px;
+    width: 100%;
+    flex-shrink: 0;
+    @include max-991 {
+      aspect-ratio: 655 / 390;
+      max-width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include tr;
+    }
+  }
+  &:hover img {
+    transform: scale(1.02);
+  }
+}
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+  justify-content: center;
+  background: #32302d;
+  padding: 22px 22px 15px;
+  width: 100%;
+  height: 100%;
+}
+.blog-type {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 12px;
+  .star-icon {
+    width: 11px;
+    height: 11px;
+    @include flexCenter;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+.blog-name {
+  font-weight: 700;
+  font-size: 24px;
+  color: $text;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 31px;
+  @include max-767 {
+    font-size: 18px;
+    height: 23px;
+  }
+}
+.blog-pargh {
+  font-weight: 400;
+  font-size: 14px;
+  color: $text;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 42px;
+}
+.blog-date {
+  font-size: 12px;
+  font-weight: 700;
+  color: $text;
+}
+/*                       blog-section                           */
