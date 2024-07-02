@@ -9,7 +9,7 @@ body {
   @include max-991 {
     padding-top: 170.22px;
   }
-  &.padding-search{
+  &.padding-search {
     padding-top: 224.22px;
   }
 }
@@ -199,45 +199,54 @@ html[dir="ltr"] .progress-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 200px;
   margin-bottom: 40px;
   gap: 20px;
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+  flex-wrap: wrap;
+  @include max-991 {
+    margin-top: 80px;
+    gap: 10px;
+  }
+  @include max-500 {
+    gap: 10px;
   }
 }
-.custom-pagention a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.custom-pagention a,
+.custom-pagention span {
+  @include flexCenter;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  color: #191c1f;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 700;
+  color: $text;
+  width: 46px;
+  height: 58px;
   line-height: 40px;
-  background-color: $white;
-  border: 1px solid #e4e7e9;
+  background-color: transparent;
+  border: 1px solid transparent;
   text-decoration: none !important;
+  outline: none !important;
+  border-radius: 10px;
+  max-width: 100%;
   transition: all 0.3s ease-in-out;
-  &.arrow {
-    border-color: $hover;
-    color: $hover;
+  &.btn {
+    border-color: $text;
+    color: $text;
+    width: 113px;
+  }
+  @include max-500 {
+    font-size: 18px;
+    width: 36px;
+    height: 48px;
   }
 }
+
 .custom-pagention a.active {
-  color: $white;
-  background-color: $hover;
-  border-color: $hover;
+  color: $main;
+  border-color: $main;
 }
 .custom-pagention a:hover {
   color: $white;
-  background-color: $hover;
+  border-color: $main;
 }
 .custom-pagention a i {
   font-size: 20px;
@@ -251,15 +260,15 @@ html[dir="ltr"] .custom-pagention a i {
   @include flexCenter;
   padding: 40px 0;
 }
-.page-head {
-  font-size: 24px;
-  color: $white;
-  font-weight: 700;
-  margin-bottom: 15px;
-  padding: 0;
-  text-transform: capitalize;
-  text-align: center;
-}
+// .page-head {
+//   font-size: 24px;
+//   color: $white;
+//   font-weight: 700;
+//   margin-bottom: 15px;
+//   padding: 0;
+//   text-transform: capitalize;
+//   text-align: center;
+// }
 ul.breadcrumb {
   background-color: transparent;
   border: none;

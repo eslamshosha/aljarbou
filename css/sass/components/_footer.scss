@@ -1,8 +1,11 @@
 /*                                   footer                            */
 footer {
-  text-align: center;
+  text-align: start;
   background-color: #453b2f;
   padding: 55px 0 60px;
+  @include max-991 {
+    text-align: center;
+  }
 }
 .footer-cont {
   display: flex;

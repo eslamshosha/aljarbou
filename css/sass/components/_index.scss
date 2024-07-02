@@ -1292,5 +1292,10 @@
       max-height: 100%;
     }
   }
+  &.contact-img {
+    figure {
+      aspect-ratio: 1;
+    }
+  }
 }
 /*                       subscribe-section                           */

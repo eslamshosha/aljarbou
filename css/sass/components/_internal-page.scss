@@ -532,12 +532,16 @@
 }
 .images-container {
   margin-top: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   @include max-991 {
     margin-top: 50px;
+    gap: 20px;
   }
   figure {
     @include flexCenter;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     width: 100%;
     img {
       width: 100%;
