@@ -1522,14 +1522,12 @@ html[dir=ltr] .work-bg {
 }
 
 .benefits-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 80px;
 }
 @media only screen and (max-width: 991px) {
   .benefits-cont {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
@@ -1537,12 +1535,9 @@ html[dir=ltr] .work-bg {
 
 .benefits-item {
   width: 100%;
-  max-width: 308px;
+  max-width: 100%;
   overflow: hidden;
   text-align: start;
-}
-.benefits-item:last-of-type {
-  margin: 0 auto;
 }
 
 .benefits-num {

@@ -91,7 +91,7 @@ $(document).ready(function () {
 
   ///////// ** fields-slider** /////////
   var specialsO = new Swiper(".fields-slider .swiper", {
-    loop: true,
+    // loop: true,
     autoplay: true,
     preloadImages: false,
     navigation: {
@@ -124,7 +124,7 @@ $(document).ready(function () {
   });
   ///////// ** blog-slider** /////////
   var specials1 = new Swiper(".blog-slider .swiper", {
-    loop: true,
+    // loop: true,
     autoplay: true,
     preloadImages: false,
     navigation: {

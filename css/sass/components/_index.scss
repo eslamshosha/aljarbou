@@ -631,24 +631,19 @@
   }
 }
 .benefits-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 80px;
   @include max-991 {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
 .benefits-item {
   width: 100%;
-  max-width: 308px;
+  max-width: 100%;
   overflow: hidden;
   text-align: start;
-  &:last-of-type {
-    margin: 0 auto;
-  }
 }
 .benefits-num {
   font-weight: 800;
