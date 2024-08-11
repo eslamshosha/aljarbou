@@ -3969,6 +3969,7 @@ textarea.form-input {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
+  gap: 20px;
 }
 @media only screen and (max-width: 991px) {
   .img-gallery-cont {
@@ -3989,15 +3990,12 @@ textarea.form-input {
 .gallery-img figure {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1;
   overflow: hidden;
   position: relative;
 }
 .gallery-img figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .terms-title {
