@@ -158,6 +158,20 @@ $(document).ready(function () {
 
   lazyLoad();
 });
+
+//showPass
+function showPass(showPass) {
+  sibling = showPass.parentElement.nextElementSibling;
+  // sibling.focus();
+  if (showPass.checked) {
+    sibling.setAttribute("type", "text");
+    $(".password-show i").addClass("active");
+  } else {
+    sibling.setAttribute("type", "password");
+    $(".password-show i").removeClass("active");
+  }
+}
+
 function lazyLoad() {
   const images = document.querySelectorAll(".lazy-img");
 

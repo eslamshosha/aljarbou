@@ -593,13 +593,11 @@
     margin: 0 auto 30px;
   }
 }
-@media (hover: hover) {
-  .custom-btn:hover {
-    text-decoration: none;
-    color: $text;
-    background-color: $main;
-    border-color: $main;
-  }
+.custom-btn:hover {
+  text-decoration: none;
+  color: $text;
+  background-color: $main;
+  border-color: $main;
 }
 .mainbg {
   .custom-btn {
