@@ -4305,9 +4305,14 @@ a.contact-item :hover {
 
 .hala-head {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 86px;
   color: var(--main-color);
   margin-bottom: 0;
+}
+@media only screen and (min-width: 1440px) {
+  .hala-head {
+    font-size: 96px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .hala-head {

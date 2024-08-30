@@ -88,9 +88,12 @@
 }
 .hala-head {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 86px;
   color: $main;
   margin-bottom: 0;
+  @include min-1440 {
+    font-size: 96px;
+  }
   @include max-991 {
     font-size: 48px;
     text-align: center;
