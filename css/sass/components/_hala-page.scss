@@ -5,6 +5,11 @@
   .mainbg-img {
     position: absolute;
     z-index: -1;
+    height: 100%;
+    min-height: 100%;
+    figure {
+      height: 98%;
+    }
   }
   @include max-767 {
     margin-bottom: 80px;
