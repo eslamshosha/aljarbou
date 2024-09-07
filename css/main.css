@@ -4999,6 +4999,10 @@ a.contact-item :hover {
   }
 }
 
+.selsela-map svg {
+  height: auto;
+}
+
 .map-marker {
   width: 100%;
   max-width: 100%;
