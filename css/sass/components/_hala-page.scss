@@ -690,6 +690,11 @@
     margin: 60px auto;
   }
 }
+.selsela-map {
+  svg {
+    height: auto;
+  }
+}
 .map-marker {
   width: 100%;
   max-width: 100%;
@@ -712,7 +717,7 @@
       transform: translate(-50%, -50%);
       color: $main;
       font-size: 1.2vw;
-      @include max-767{
+      @include max-767 {
         font-size: 1.4vw;
       }
     }
